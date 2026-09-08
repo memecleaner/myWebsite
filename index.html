@@ -21,7 +21,7 @@
       <!-- Menu Navigasi -->
       <ul class="flex items-center gap-6 font-sans font-bold text-sm tracking-wider uppercase">
         <li><a href="#about" class="px-8 py-5 rounded-full hover:bg-pink-300/90 active:bg-pink-500 transition-all duration-200">About</a></li>
-        <li><a href="#projects" class="px-6 py-5 rounded-full hover:bg-pink-300/90 active:bg-pink-500 transition-all duration-200">Projects</a></li>
+        <li><a href="#myprojects" class="px-6 py-5 rounded-full hover:bg-pink-300/90 active:bg-pink-500 transition-all duration-200">Projects</a></li>
         <li><a href="#contact" class="px-6 py-5 rounded-full hover:bg-pink-300/90 active:bg-pink-500 transition-all duration-200">Contact</a></li>
       </ul>
     </nav>
@@ -37,41 +37,46 @@
         <div>
              <div>
                 <button class="mt-2 mr-4 px-6 py-3 bg-pink-300/60 hover:bg-pink-900 text-white font-bold py-2 px-12 rounded-full transition-all duration-200">Contact Me →</button>
-                <button class="px-6 py-3 rounded-full border-2 border-pink-300 text-pink-400 font-sans font-bold text-sm hover:bg-pink-400 hover:text-white active:scale-95 transition-all duration-200">My Projects</button>
-                <button class="px-6 py-3 rounded-full border-2 border-pink-300 text-pink-400 font-sans font-bold text-sm hover:bg-pink-400 hover:text-white active:scale-95 transition-all duration-200">Download CV</button>
+                <a href="#myprojects" class="px-6 py-4 rounded-full border-2 border-pink-300 text-pink-400 font-sans font-bold text-sm hover:bg-pink-400 hover:text-white active:scale-95 transition-all duration-200 mr-3">My Projects
+                </a>
+                <button onClick="downloadCV()" class="px-6 py-3 rounded-full border-2 border-pink-300 text-pink-400 font-sans font-bold text-sm hover:bg-pink-400 hover:text-white active:scale-95 transition-all duration-200">Download CV</button>
             </div>
         </div>
     </div>
     <div>
-        <img src="/clips/profile.jpg" alt="Placeholder Image" class="rounded-lg shadow-lg">
+        <img src="/clips/mypic.jpg" alt="Placeholder Image" class="rounded-lg shadow-lg min-w-[400px] max-w-[500px] h-auto">
     </div>
 </section>
 
 <!-- page 2 -->
 <section id="about" class="bg-mauve-950 min-h-screen text-white flex items-center justify-center px-20 py-15">
     <div class="max-w-xs m-10">
-        <img src="/clips/profile.jpg" alt="Placeholder Image" class="rounded-lg shadow-lg w-full h-auto">
+        <img src="/clips/about.jpg" alt="Placeholder Image" class="rounded-lg shadow-lg w-full h-auto">
     </div>
     <div>
         <h1 class="text-4xl font-bubble font-bold mb-4">About Me</h1>
-        <p class="max-w-4xl mr-10">lore ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto id a repellat nisi ullam nam error ab vitae velit perspiciatis dignissimos fuga consequuntur est, fugiat aut. Ad fugiat numquam reprehenderit?</p>
-        <div>
-            <button class="px-7 py-3 rounded-full border-2 border-pink-300 text-white font-sans font-bold text-sm hover:bg-pink-400 hover:text-white active:scale-95 transition-all duration-200"
+        <p class="max-w-4xl mr-10">I am a fresh graduate in Computer Systems from Gunadarma University with a strong interest in Internet of Things (IoT), embedded systems, and hardware- software integration.
+          <br>
+        During my studies, I gained hands on experience in developing IoT based projects involving microcontrollers, sensors, actuators, and cloud platforms with a particular interest in connecting hardware and software to build practical solutions.
+        <br>
+        I am passionate about learning new technologies, developing my technical skills, and turning ideas into functional systems. While my primary interests are in IoT and embedded systems, I am also open to exploring new fields and opportunities that allow me to broaden my knowledge, gain new experiences, and grow both personally and professionally.</p>
+        <div class="mt-4 mb-4">
+            <a href="mailto:audreykboren@gmail.com" class="px-7 py-3 rounded-full border-2 border-pink-300 text-white font-sans font-bold text-sm hover:bg-pink-400 hover:text-white active:scale-95 transition-all duration-200"
             >
             <img src="/clips/email.svg" alt="Email Icon" class="inline-block w-4 h-5">
             <span>audreykboren@gmail.com →</span>
-            </button>
-            <button class="m-4 px-7 py-3 rounded-full border-2 border-pink-300 text-white font-sans font-bold text-sm hover:bg-pink-400 hover:text-white active:scale-95 transition-all duration-200">
+            </a>
+            <a href="https://www.linkedin.com/in/audreyboren" target="_blank" rel="noopener noreferrer" class="m-4 px-7 py-3 rounded-full border-2 border-pink-300 text-white font-sans font-bold text-sm hover:bg-pink-400 hover:text-white active:scale-95 transition-all duration-200">
             <img src="/clips/linkedin.svg" alt="LinkedIn Icon" class="inline-block w-4 h-5 mr-2">
             <span>/audreyboren →</span>            
-            </button>
-            <button class="px-7 py-3 rounded-full border-2 border-pink-300 text-white font-sans font-bold text-sm hover:bg-pink-400 hover:text-white active:scale-95 transition-all duration-200">
+            </a>
+            <a href="https://wa.me/6285814718630" target="_blank" rel="noopener noreferrer" class="px-7 py-3 rounded-full border-2 border-pink-300 text-white font-sans font-bold text-sm hover:bg-pink-400 hover:text-white active:scale-95 transition-all duration-200">
             <img src="/clips/wa.svg" alt="WhatsApp Icon" class="inline-block w-8 h-6">
             <span>Whatsapp →</span>            
-            </button>
+            </a>
         </div>
-        <button class="mt-2 mr-2 px-6 py-3 bg-pink-300/60 hover:bg-pink-900 text-white font-bold py-2 px-12 rounded-full transition-all duration-200">Download CV</button>
-        <button class="mt-2 mr-4 px-6 py-3 bg-pink-300/60 hover:bg-pink-900 text-white font-bold py-2 px-12 rounded-full transition-all duration-200">Download Portofolio</button>
+        <button onClick="downloadCV()" class="mt-2 mr-2 px-6 py-3 bg-pink-300/60 hover:bg-pink-900 text-white font-bold py-2 px-12 rounded-full transition-all duration-200">Download CV</button>
+        <button onClick="downloadPortfolio()" class="mt-2 mr-4 px-6 py-3 bg-pink-300/60 hover:bg-pink-900 text-white font-bold py-2 px-12 rounded-full transition-all duration-200">Download Portofolio</button>
     </div>
 </section>
 
@@ -83,6 +88,7 @@
     </h2>
     <p class="font-sans text-mauve-200">A showcase of things I've built and worked on.</p>
   </div>
+  <!-- card 1 -->
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <div class="bg-slate-800/80 border border-white/10 rounded-2xl overflow-hidden hover:border-white/50 hover:shadow-lg transition-all duration-300 flex flex-col">
       <!-- Image Placeholder (Atas) -->
@@ -113,6 +119,7 @@
       </div>
     </div>
 
+    <!-- card 2 -->
  <div class="bg-slate-800/80 border border-white/10 rounded-2xl overflow-hidden hover:border-white/50 hover:shadow-lg transition-all duration-300 flex flex-col">
       <div class="w-full h-48 bg-mauve-700/60 flex items-center justify-center border-b border-white/5">
         <img src="/clips/project2.jpg" alt="Project Image" class="w-full h-full object-cover">
@@ -134,6 +141,7 @@
       </div>
     </div>
 
+<!-- card 3 -->
   <div class="bg-slate-800/80 border border-white/10 rounded-2xl overflow-hidden hover:border-white/50 hover:shadow-lg transition-all duration-300 flex flex-col">
       <div class="w-full h-48 bg-mauve-700/60 flex items-center justify-center border-b border-white/5">
         <img src="/clips/project3.png" alt="Project Image" class="w-full h-full object-cover">
@@ -155,15 +163,102 @@
         </div>
       </div>
     </div>
-
-
   </div>
+<!-- card 4 -->
+  <div class="mt-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="bg-slate-800/80 border border-white/10 rounded-2xl overflow-hidden hover:border-white/50 hover:shadow-lg transition-all duration-300 flex flex-col">
+      <div class="w-full h-48 bg-mauve-700/60 flex items-center justify-center border-b border-white/5">
+        <img src="/clips/project4.png" alt="Project Image" class="w-full h-full object-cover">
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between bg-mauve-800/60">
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="px-2.5 py-1 rounded-md bg-mauve-900/80 text-pink-400 text-xs font-bold border border-pink-500/20">Embedded Systems</span>
+          <span class="px-2.5 py-1 rounded-md bg-mauve-900/80 text-pink-400 text-xs font-bold border border-pink-500/20">Arduino Uno</span>
+          <span class="px-2.5 py-1 rounded-md bg-mauve-900/80 text-pink-400 text-xs font-bold border border-pink-500/20">Sensor integrated</span>
+          <span class="px-2.5 py-1 rounded-md bg-mauve-900/80 text-pink-400 text-xs font-bold border border-pink-500/20">C++</span>
+        </div>
+        <!-- Title & Description -->
+        <div>
+          <h3 class="font-sans font-bold text-lg text-white mb-2">Arduino-Based Automatic Rotary Waste Sorting System for Metal, Wet, and Dry Categories</h3>
+          <p class="font-sans text-slate-400 text-sm leading-relaxed">
+          Developed an automated three-category waste classification system powered by an Arduino UNO. The system categorizes waste into Metal, Wet, and Dry categories using a multi- sensor array and automatically dispatches items into designated compartments via a motorized rotary mechanism.
+          </p>
+        </div>
+      </div>
+    </div>
+<!-- card 5  -->
+ <div class="bg-slate-800/80 border border-white/10 rounded-2xl overflow-hidden hover:border-white/50 hover:shadow-lg transition-all duration-300 flex flex-col">
+      <div class="w-full h-48 bg-mauve-700/60 flex items-center justify-center border-b border-white/5">
+        <img src="/clips/project5.png" alt="Project Image" class="w-full h-full object-cover">
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between bg-mauve-800/60">
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="px-2.5 py-1 rounded-md bg-slate-900/80 text-pink-400 text-xs font-bold border border-pink-500/20">Rest API</span>
+          <span class="px-2.5 py-1 rounded-md bg-slate-900/80 text-pink-400 text-xs font-bold border border-pink-500/20">HTML, CSS, JavaScript</span>
+          <span class="px-2.5 py-1 rounded-md bg-slate-900/80 text-pink-400 text-xs font-bold border border-pink-500/20">Geolocation API</span>
+          <span class="px-2.5 py-1 rounded-md bg-slate-900/80 text-pink-400 text-xs font-bold border border-pink-500/20">Leaflet.js</span>
+          <span class="px-2.5 py-1 rounded-md bg-slate-900/80 text-pink-400 text-xs font-bold border border-pink-500/20">Vercel</span>
+        </div>
+        <div>
+          <h3 class="font-sans font-bold text-lg text-white mb-2">Mental Health & Anti-Bullying Awareness Web Application</h3>
+          <p class="font-sans text-slate-400 text-sm leading-relaxed">
+          Designed and developed LUGNA, a responsive, mobile mental health web application focused on frontend interactive experience and user-centered design. Built to combat social stigma and prevent self-diagnosis, the application prioritizes a calming visual design, seamless user flows, and accessible interface design to provide a safe space for individuals facing depression, anxiety, or bullying.
+          </p>
+        </div>
+      </div>
+    </div>
+<!-- card 6 -->
+  <div class="bg-slate-800/80 border border-white/10 rounded-2xl overflow-hidden hover:border-white/50 hover:shadow-lg transition-all duration-300 flex flex-col">
+      <div class="w-full h-48 bg-mauve-700/60 flex items-center justify-center border-b border-white/5">
+        <img src="/clips/project3.png" alt="Project Image" class="w-full h-full object-cover">
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between bg-mauve-800/60">
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="px-2.5 py-1 rounded-md bg-slate-900/80 text-pink-400 text-xs font-bold border border-pink-500/20">Internet of Things</span>
+          <span class="px-2.5 py-1 rounded-md bg-slate-900/80 text-pink-400 text-xs font-bold border border-pink-500/20">Cloud Real-time Database</span>
+          <span class="px-2.5 py-1 rounded-md bg-slate-900/80 text-pink-400 text-xs font-bold border border-pink-500/20">Wemos D1 Mini</span>
+          <span class="px-2.5 py-1 rounded-md bg-slate-900/80 text-pink-400 text-xs font-bold border border-pink-500/20">Android Mobile App</span>
+          <span class="px-2.5 py-1 rounded-md bg-slate-900/80 text-pink-400 text-xs font-bold border border-pink-500/20">Flutter</span>
+          <span class="px-2.5 py-1 rounded-md bg-slate-900/80 text-pink-400 text-xs font-bold border border-pink-500/20">C++</span>
+        </div>
+        <div>
+          <h3 class="font-sans font-bold text-lg text-white mb-2">Sistem Mitigasi Banjir</h3>
+          <p class="font-sans text-slate-400 text-sm leading-relaxed">
+            Developed a Smart Lighting System powered by IoT and integrated with a custom Flutter mobile application to offer flexible room lighting management. The system features a dual-mode operational architecture Automatic (Sensor-driven) and Manual (App-driven) connected via a real-time cloud database.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-  
-
-
+<!-- Page 4 -->
+<section id="contact" class="scroll-mt-20 min-h-screen bg-mauve-950 text-white px-8 md:px-20 py-16">
+  <div class="max-w-7xl mx-auto mb-12">
+    <h2 class="font-bubble text-4xl text-white tracking-wide uppercase mb-2">
+      My <span class="text-pink-200">Contact</span>
+    </h2>
+  </div>
 </section>
 
 </body>
+<script>
+  function downloadCV() {
+    const link = document.createElement('a');
+    link.href = '/public/CV_AudreyKyriaBoren.pdf';
+    link.download = 'CV_AudreyKyriaBoren.pdf'; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+function downloadPortfolio() {
+    const link = document.createElement('a');
+    link.href = '/public/Portofolio_AudreyKyriaBoren.pdf';
+    link.download = 'Portofolio_AudreyKyriaBoren.pdf'; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script>
 </html>
